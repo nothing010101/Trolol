@@ -10,155 +10,96 @@
       box-sizing: border-box;
     }
     body, html {
-      font-family: 'Arial', sans-serif;
-      background: #000;
+      height: 100%;
+      font-family: Arial, sans-serif;
       color: #fff;
       overflow-x: hidden;
-      position: relative;
-      height: 100%;
     }
     video.bg-video {
       position: fixed;
       top: 0;
       left: 0;
-      min-width: 100vw;
-      min-height: 100vh;
+      width: 100vw;
+      height: 100vh;
       object-fit: cover;
       z-index: -1;
     }
-    header {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    .content {
       text-align: center;
-      padding: 2rem;
-      animation: fadeIn 1.5s ease-in-out;
+      padding-top: 15vh;
     }
-    header img {
-      max-width: 150px;
-      margin-bottom: 1.5rem;
-      animation: popIn 1s ease forwards;
+    .logo-img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      animation: slideInDown 1s ease forwards;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      color: #ccc;
-    }
-    .buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 3rem;
+    .title {
+      font-size: 4em;
+      margin: 20px 0;
+      text-shadow: 2px 2px #000;
     }
     .buttons a {
-      background: #0f0;
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #00ffcc;
       color: #000;
-      padding: 0.8rem 1.5rem;
-      border-radius: 50px;
-      text-decoration: none;
       font-weight: bold;
-      transition: all 0.3s ease;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #00ffcc;
     }
-    .buttons a:hover {
-      transform: scale(1.1);
-      background: #fff;
+    .tokenomics {
+      margin: 60px auto;
+      max-width: 700px;
+      background: rgba(0,0,0,0.7);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
     }
-    .info-section {
+    .tokenomics h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #00ffcc;
+    }
+    .tokenomics p {
+      font-size: 1.3em;
+      line-height: 2em;
+    }
+    .socials {
+      margin: 40px auto;
       text-align: center;
-      padding: 4rem 2rem;
-      background-color: rgba(0, 0, 0, 0.8);
     }
-    .info-section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      letter-spacing: 2px;
-      color: #0f0;
-      animation: popIn 0.8s ease;
+    .socials a img {
+      width: 50px;
+      margin: 0 15px;
     }
-    .info-section .info-box {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-      font-size: 1.5rem;
-      color: #fff;
-      font-weight: 600;
-      margin-bottom: 2rem;
-      animation: fadeIn 1.2s ease;
+    .ape-store-img {
+      margin-top: 20px;
+      width: 150px;
     }
-    .info-section img {
-      width: 120px;
-      border-radius: 12px;
-      animation: popIn 1s ease forwards;
-    }
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 3rem 1rem;
-    }
-    .social-icons a img {
-      width: 60px;
-      height: 60px;
-      transition: transform 0.3s;
-    }
-    .social-icons a:hover img {
-      transform: scale(1.2);
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #777;
-    }@keyframes fadeIn {
-  from { opacity: 0; } to { opacity: 1; }
-}
-@keyframes popIn {
-  0% { transform: scale(0.5); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
-}
-@keyframes slideInDown {
-  0% { transform: translateY(-50px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
-}
-
   </style>
 </head>
-<body>
-  <video class="bg-video" autoplay loop playsinline>
+<body>  <video class="bg-video" autoplay loop muted playsinline>
     <source src="troll2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>  <header>
-    <img src="troll.jpg" alt="TROLL Logo" />
-    <h1>WE ARE THE TROLLS</h1>
-    <p>Contract: 0xxxxxxxxxxxxxxxxxxxx</p>
+  </video>  <div class="content">
+    <img src="troll.jpg" alt="TROLL Logo" class="logo-img">
+    <h1 class="title">TROLL</h1>
     <div class="buttons">
-      <a href="https://x.com" target="_blank">Twitter</a>
-      <a href="https://t.me" target="_blank">Telegram</a>
-      <a href="https://ape.store" target="_blank">Buy Now</a>
+      <a href="https://x.com" target="_blank">X</a>
+      <a href="https://t.me" target="_blank">TELEGRAM</a>
+      <a href="https://ape.store" target="_blank">BUY NOW</a>
     </div>
-  </header>  <section class="info-section">
+  </div>  <div class="tokenomics">
     <h2>⚡ TOKENOMICS ⚡</h2>
-    <div class="info-box">
-      <div>Total Supply: <span style="color:#0f0">1,000,000,000</span></div>
-      <div>LP: <span style="color:#0f0">Locked Forever</span></div>
-      <div>Tax: <span style="color:#0f0">0%</span></div>
-      <div>Listed on: <a href="https://ape.store" style="color:#0f0; text-decoration: underline;">ape.store</a></div>
-    </div>
-    <img src="ape.jpg" alt="Ape Store" />
-  </section>  <div class="social-icons">
+    <p>Total Supply: 1B<br>
+    LP Locked Forever<br>
+    0% Tax<br>
+    Already on <a href="https://ape.store" target="_blank" style="color:#00ffcc;text-decoration:underline;">ape.store</a></p>
+    <img src="ape.jpg" alt="Ape Store" class="ape-store-img">
+  </div>  <div class="socials">
     <a href="https://x.com" target="_blank"><img src="x.jpg" alt="X" /></a>
     <a href="https://t.me/" target="_blank"><img src="tele.jpg" alt="Telegram" /></a>
     <a href="https://ape.store/base" target="_blank"><img src="apetroll.jpg" alt="Ape Store Base" /></a>
-  </div>  <footer>
-    © 2025 TROLL COIN. All Rights Reserved.
-  </footer>
-</body>
+  </div></body>
 </html>
