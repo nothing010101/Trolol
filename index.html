@@ -45,6 +45,7 @@
       gap: 1rem;
       flex-wrap: wrap;
       justify-content: center;
+      margin-bottom: 3rem;
     }
     .buttons a {
       background: #0f0;
@@ -58,6 +59,25 @@
     .buttons a:hover {
       transform: scale(1.1);
       background: #fff;
+    }
+    .info-section {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+    }
+    .info-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .info-section p {
+      font-size: 1rem;
+      color: #bbb;
+      margin-bottom: 1.5rem;
+    }
+    .info-section img {
+      width: 100px;
+      border-radius: 10px;
+      animation: popIn 1s ease forwards;
     }
     footer {
       text-align: center;
@@ -88,7 +108,13 @@
       <a href="https://t.me" target="_blank">Telegram</a>
       <a href="https://ape.store" target="_blank">Buy Now</a>
     </div>
-  </header>  <footer>
+  </header>  <section class="info-section">
+    <h2>Tokenomics</h2>
+    <p>Total Supply: 1,000,000,000<br>
+    LP Locked Forever | 0% Tax<br>
+    Already on <a href="https://ape.store" style="color:#0f0; text-decoration: underline;">ape.store</a></p>
+    <img src="ape.jpg" alt="Ape Store" />
+  </section>  <footer>
     © 2025 TROLL COIN. All Rights Reserved.
   </footer>
 </body>
