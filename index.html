@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TROLL</title>
+  <title>TROLL COIN</title>
   <style>
     * {
       margin: 0;
@@ -11,11 +11,11 @@
     }
     body, html {
       height: 100%;
-      font-family: Arial, sans-serif;
-      color: #fff;
+      font-family: 'Arial', sans-serif;
       overflow-x: hidden;
+      color: white;
     }
-    video.bg-video {
+    video#bgvid {
       position: fixed;
       top: 0;
       left: 0;
@@ -24,123 +24,89 @@
       object-fit: cover;
       z-index: -1;
     }
-    .content {
+    .container {
       text-align: center;
-      padding-top: 15vh;
+      padding: 2rem;
     }
-    .logo-img {
-      width: 100px;
+    .logo {
+      width: 300px;
       height: auto;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
-    .title {
-      font-size: 4em;
-      margin: 20px 0;
-      text-shadow: 2px 2px #000;
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: #fff;
     }
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      background: #00ffcc;
-      color: #000;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 0 10px #00ffcc;
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 2rem 0;
+    }
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+    }
+    .buy-button {
+      background-color: #ff007f;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 2rem 0;
     }
     .tokenomics {
-      margin: 60px auto;
-      max-width: 700px;
-      background: transparent;
-      padding: 30px;
-      border-radius: 15px;
-      backdrop-filter: blur(10px);
-      text-align: center;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 4rem;
     }
     .tokenomics h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
       color: #00ffcc;
-      text-shadow: 1px 1px 2px #000;
+      margin-bottom: 1rem;
     }
-    .tokenomics p.description {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      line-height: 1.7em;
-    }
-    .tokenomics .stats {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-    .tokenomics .stat-box {
-      background: rgba(0,0,0,0.5);
-      padding: 20px;
-      margin: 10px;
-      border-radius: 12px;
-      width: 45%;
-      min-width: 180px;
-    }
-    .tokenomics .stat-box h3 {
-      font-size: 1.5em;
-      color: #00ffcc;
-    }
-    .tokenomics .stat-box p {
-      font-size: 1.2em;
-    }
-    .socials {
-      margin: 40px auto;
-      text-align: center;
-    }
-    .socials a img {
-      width: 50px;
-      margin: 0 15px;
-    }
-    .ape-store-img {
-      margin-top: 20px;
-      width: 150px;
+    .tokenomics p {
+      font-size: 1.2rem;
+      color: #000;
+      background: rgba(255,255,255,0.9);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
     }
   </style>
 </head>
-<body>  <video class="bg-video" autoplay loop muted playsinline>
+<body>
+  <video autoplay loop muted playsinline id="bgvid">
     <source src="troll2.mp4" type="video/mp4">
-  </video>  <div class="content">
-    <img src="troll.jpg" alt="TROLL Logo" class="logo-img">
-    <h1 class="title">TROLL</h1>
-    <div class="buttons">
-      <a href="https://x.com" target="_blank">X</a>
-      <a href="https://t.me" target="_blank">TELEGRAM</a>
-      <a href="https://ape.store" target="_blank">BUY NOW</a>
+  </video>
+  <div class="container">
+    <img src="troll.jpg" alt="TROLL Logo" class="logo" />
+    <h1>TROLL</h1>
+    <div class="social-icons">
+      <a href="https://x.com"><img src="x.jpg" alt="X" /></a>
+      <a href="https://t.me/"><img src="tele.jpg" alt="Telegram" /></a>
+      <a href="https://ape.store/base"><img src="apetroll.jpg" alt="ApeStore" /></a>
     </div>
-  </div>  <div class="tokenomics">
-    <h2>⚡ TOKENOMICS ⚡</h2>
-    <p class="description">
-      TROLL is not just a meme — it's a movement. Born from the depths of internet chaos,
-      TROLL turns every shitpost into potential gold. No taxes. No dev wallets. Just pure troll energy.
-    </p>
-    <div class="stats">
-      <div class="stat-box">
-        <h3>1,000,000,000</h3>
-        <p>Total Supply</p>
-      </div>
-      <div class="stat-box">
-        <h3>0%</h3>
-        <p>Buy/Sell Tax</p>
-      </div>
-      <div class="stat-box">
-        <h3>FOREVER</h3>
-        <p>LP Locked</p>
-      </div>
-      <div class="stat-box">
-        <h3>LIVE</h3>
-        <p>on Ape.Store</p>
-      </div>
-    </div>
-    <img src="ape.jpg" alt="Ape Store" class="ape-store-img">
-  </div>  <div class="socials">
-    <a href="https://x.com" target="_blank"><img src="x.jpg" alt="X" /></a>
-    <a href="https://t.me/" target="_blank"><img src="tele.jpg" alt="Telegram" /></a>
-    <a href="https://ape.store/base" target="_blank"><img src="apetroll.jpg" alt="Ape Store Base" /></a>
-  </div></body>
+    <a href="https://ape.store"><button class="buy-button">BUY NOW</button></a><div class="tokenomics">
+  <h2>⚡ TOKENOMICS ⚡</h2>
+  <p>
+    TROLL is not just a meme coin. It's a movement. Born from the deepest corners of internet culture, TROLL represents chaos, humor, and pure decentralization. No roadmap, no promises — just trolls, memes, and an unstoppable community. Deployed on Base, already shaking the blockchain with its presence.
+  </p>
+  <p>
+    🔥 Total Supply: 1,000,000,000 TROLL<br>
+    🔒 LP Locked Forever<br>
+    🧾 0% Tax<br>
+    🚀 Already listed on <a href="https://ape.store" style="color:#ff007f; font-weight:bold;">APE STORE</a><br>
+    🧠 Powered by the community, for the chaos
+  </p>
+</div>
+
+  </div>
+</body>
 </html>
