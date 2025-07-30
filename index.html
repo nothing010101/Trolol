@@ -62,21 +62,29 @@
     }
     .info-section {
       text-align: center;
-      padding: 2rem;
+      padding: 4rem 2rem;
       background-color: #111;
     }
     .info-section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      letter-spacing: 2px;
+      color: #0f0;
+      animation: popIn 0.8s ease;
     }
-    .info-section p {
-      font-size: 1rem;
-      color: #bbb;
-      margin-bottom: 1.5rem;
+    .info-section .info-box {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      animation: fadeIn 1.2s ease;
     }
     .info-section img {
-      width: 100px;
-      border-radius: 10px;
+      width: 120px;
+      border-radius: 12px;
       animation: popIn 1s ease forwards;
     }
     footer {
@@ -109,10 +117,13 @@
       <a href="https://ape.store" target="_blank">Buy Now</a>
     </div>
   </header>  <section class="info-section">
-    <h2>Tokenomics</h2>
-    <p>Total Supply: 1,000,000,000<br>
-    LP Locked Forever | 0% Tax<br>
-    Already on <a href="https://ape.store" style="color:#0f0; text-decoration: underline;">ape.store</a></p>
+    <h2>⚡ TOKENOMICS ⚡</h2>
+    <div class="info-box">
+      <div>Total Supply: <span style="color:#0f0">1,000,000,000</span></div>
+      <div>LP: <span style="color:#0f0">Locked Forever</span></div>
+      <div>Tax: <span style="color:#0f0">0%</span></div>
+      <div>Listed on: <a href="https://ape.store" style="color:#0f0; text-decoration: underline;">ape.store</a></div>
+    </div>
     <img src="ape.jpg" alt="Ape Store" />
   </section>  <footer>
     © 2025 TROLL COIN. All Rights Reserved.
