@@ -9,11 +9,22 @@
       padding: 0;
       box-sizing: border-box;
     }
-    body {
+    body, html {
       font-family: 'Arial', sans-serif;
       background: #000;
       color: #fff;
       overflow-x: hidden;
+      position: relative;
+      height: 100%;
+    }
+    video.bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      object-fit: cover;
+      z-index: -1;
     }
     header {
       height: 100vh;
@@ -63,7 +74,7 @@
     .info-section {
       text-align: center;
       padding: 4rem 2rem;
-      background-color: #111;
+      background-color: rgba(0, 0, 0, 0.8);
     }
     .info-section h2 {
       font-size: 2.5rem;
@@ -87,6 +98,31 @@
       border-radius: 12px;
       animation: popIn 1s ease forwards;
     }
+    .embed-section {
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.85);
+      text-align: center;
+    }
+    .embed-section iframe {
+      width: 90%;
+      height: 500px;
+      border: none;
+      border-radius: 12px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 1rem;
+    }
+    .social-icons a img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover img {
+      transform: scale(1.2);
+    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -107,7 +143,10 @@
   </style>
 </head>
 <body>
-  <header>
+  <video class="bg-video" autoplay muted loop>
+    <source src="troll2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>  <header>
     <img src="troll.jpg" alt="TROLL Logo" />
     <h1>WE ARE THE TROLLS</h1>
     <p>Contract: 0xxxxxxxxxxxxxxxxxxxx</p>
@@ -125,7 +164,13 @@
       <div>Listed on: <a href="https://ape.store" style="color:#0f0; text-decoration: underline;">ape.store</a></div>
     </div>
     <img src="ape.jpg" alt="Ape Store" />
-  </section>  <footer>
+  </section>  <section class="embed-section">
+    <iframe src="https://dexscreener.com/base" allowfullscreen></iframe>
+  </section>  <div class="social-icons">
+    <a href="https://x.com" target="_blank"><img src="x.jpg" alt="X" /></a>
+    <a href="https://t.me/" target="_blank"><img src="tele.jpg" alt="Telegram" /></a>
+    <a href="https://ape.store/base" target="_blank"><img src="apetroll.jpg" alt="Ape Store Base" /></a>
+  </div>  <footer>
     © 2025 TROLL COIN. All Rights Reserved.
   </footer>
 </body>
