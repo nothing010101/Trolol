@@ -14,7 +14,6 @@
       font-family: Arial, sans-serif;
       color: #fff;
       overflow-x: hidden;
-      background: #000;
     }
     video.bg-video {
       position: fixed;
@@ -49,67 +48,58 @@
       border-radius: 8px;
       text-decoration: none;
       box-shadow: 0 0 10px #00ffcc;
-      transition: transform 0.2s;
-    }
-    .buttons a:hover {
-      transform: scale(1.05);
     }
     .tokenomics {
       margin: 60px auto;
-      max-width: 800px;
-      background: rgba(0,0,0,0.75);
-      padding: 40px;
-      border-radius: 20px;
-      backdrop-filter: blur(12px);
+      max-width: 700px;
+      background: transparent;
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
       text-align: center;
-      box-shadow: 0 0 20px #00ffcc33;
     }
     .tokenomics h2 {
-      font-size: 3em;
+      font-size: 2.5em;
       margin-bottom: 20px;
       color: #00ffcc;
-      animation: pulse 1.5s infinite;
+      text-shadow: 1px 1px 2px #000;
     }
-    .tokenomics p {
+    .tokenomics p.description {
       font-size: 1.2em;
-      line-height: 1.8em;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      line-height: 1.7em;
     }
     .tokenomics .stats {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      margin-top: 30px;
     }
     .tokenomics .stat-box {
-      background: #111;
-      border: 2px solid #00ffcc;
+      background: rgba(0,0,0,0.5);
       padding: 20px;
-      border-radius: 12px;
-      width: 220px;
       margin: 10px;
-      font-size: 1.1em;
+      border-radius: 12px;
+      width: 45%;
+      min-width: 180px;
     }
-    .ape-store-img {
-      margin-top: 25px;
-      width: 160px;
+    .tokenomics .stat-box h3 {
+      font-size: 1.5em;
+      color: #00ffcc;
+    }
+    .tokenomics .stat-box p {
+      font-size: 1.2em;
     }
     .socials {
-      margin: 60px auto;
+      margin: 40px auto;
       text-align: center;
     }
     .socials a img {
       width: 50px;
       margin: 0 15px;
-      transition: transform 0.3s;
     }
-    .socials a img:hover {
-      transform: scale(1.1);
-    }
-    @keyframes pulse {
-      0% { text-shadow: 0 0 10px #00ffcc; }
-      50% { text-shadow: 0 0 20px #00ffcc; }
-      100% { text-shadow: 0 0 10px #00ffcc; }
+    .ape-store-img {
+      margin-top: 20px;
+      width: 150px;
     }
   </style>
 </head>
@@ -125,23 +115,26 @@
     </div>
   </div>  <div class="tokenomics">
     <h2>⚡ TOKENOMICS ⚡</h2>
-    <p>TROLL adalah meme coin yang hadir untuk ngetroll pasar, ngelawak bareng komunitas, dan bikin yang FOMO makin panik. Dibangun tanpa janji, tanpa roadmap, tanpa mercy. Hanya TROLL dan tawa kekacauan.</p>
+    <p class="description">
+      TROLL is not just a meme — it's a movement. Born from the depths of internet chaos,
+      TROLL turns every shitpost into potential gold. No taxes. No dev wallets. Just pure troll energy.
+    </p>
     <div class="stats">
       <div class="stat-box">
-        <strong>Total Supply</strong><br>
-        1,000,000,000 TROLL
+        <h3>1,000,000,000</h3>
+        <p>Total Supply</p>
       </div>
       <div class="stat-box">
-        <strong>Tax</strong><br>
-        0% Buy / 0% Sell
+        <h3>0%</h3>
+        <p>Buy/Sell Tax</p>
       </div>
       <div class="stat-box">
-        <strong>Liquidity</strong><br>
-        Locked Forever
+        <h3>FOREVER</h3>
+        <p>LP Locked</p>
       </div>
       <div class="stat-box">
-        <strong>Marketplace</strong><br>
-        Listed on <a href="https://ape.store" target="_blank">ape.store</a>
+        <h3>LIVE</h3>
+        <p>on Ape.Store</p>
       </div>
     </div>
     <img src="ape.jpg" alt="Ape Store" class="ape-store-img">
